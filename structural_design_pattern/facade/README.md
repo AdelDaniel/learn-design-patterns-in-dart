@@ -9,32 +9,28 @@
   </tr>
 </table></center>
 
-<center><img width=75% src="assets/facade-diagram.png"></center>
+<center>
+<img width=75% src="assets/facade-diagram.png">
+</center>
 
 
 
 ## Sections
 - [Definitions](#Definitions)
-- [What Problem Facade Solve?](#What-Problem-Facade-Solve?)
+- [What Problem Facade Solve](#What-Problem-Facade-Solve)
 - [Examples](#Examples)
     - [file converter example ](#file-converter-example)
-    - [Shape Marker](#Shape-Marker)  Tutorial point Example 
+    - [Shape Maker](#Shape-Maker)  Tutorial point Example 
 - [Sources](#Sources)
 
 
 ## **Definitions**
-   <dl>
+<dl>
     <dt><b>tutorialspoint </b></dt>
     <dd> 
         <li>is a structural pattern.</li>
         <li> this pattern adds an interface to existing system to hide its complexities.</li>
         <li> and provides an interface to the client using which the client can access the system.</li>
-    </dd>
-    <dt><b>refactoring.guru </b></dt>
-    <dd>
-        <li>a structural pattern</li>
-        <li>provides a simplified interface to a library, a framework, or any other complex set of classes.</li>
-    </dd>
     </dd>
     <dt><b>Wikipedia </b></dt>
     <dd>
@@ -48,17 +44,17 @@
 
 </br>
 
-## **What Problem Facade Solve?**
+## **What Problem Facade Solve**
 
 - Imagine that you must make your code work with a broad set of objects that belong to a sophisticated library or framework.
-- Ordinarily, you’d need to initialize all of those objects, keep track of dependencies, execute methods in the correct order, and so on.
+- Ordinarily, you’d need to initialize all of those objects, keep track of dependencies, **`execute methods in the correct order`**, and so on.
 
 > As a result, the business logic of your classes would become tightly coupled to the implementation details of 3rd-party classes, making it hard to comprehend and maintain.
 
 ---
 
 ### Solution 
-- A facade is a `class` that provides a simple interface to a complex subsystem which contains lots of moving parts.
+- A facade is a `class` that provides a `simple interface` to a complex subsystem which contains lots of moving parts.
 - A facade might provide limited functionality in comparison to working with the subsystem directly.
 - However, it includes only those features that clients really care about.
 
@@ -69,14 +65,11 @@
 ## **Examples**
 
 ### file converter example 
- - Example in dart: <a href="file converter example ="_blank">file converter example  </a>
- - Example Source: 
-    - <a href="https://refactoring.guru/design-patterns/bridge" target="_blank" >https://refactoring.guru/design-patterns/bridge</a>
-    - <a href="https://www.tutorialspoint.com/design_pattern/bridge_pattern.htm" target="_blank" >https://www.tutorialspoint.com/design_pattern/bridge_pattern.htm</a>
+ - Example in dart: <a href="file_converter/" target="_blank">file converter example </a>
 
-### Shape Marker
+### Shape Maker
 - source: <a href="https://www.tutorialspoint.com/design_pattern/facade_pattern.htm" target="_blank">tutorialspoint.com/design_pattern/facade_pattern</a>
-- Example in dart: <a href="shape_marker.dart" target="_blank">Shape Marker</a>
+- Example in dart: <a href="shape_maker.dart" target="_blank">Shape Maker</a>
 
 
 
@@ -84,5 +77,5 @@
 
 - <a href="https://en.wikipedia.org/wiki/Facade_pattern" target="_blank"> wikipedia.org Facade_pattern</a>
 - <a href="https://refactoring.guru/design-patterns/facade" target="_blank"> refactoring.guru design-patterns facade</a>
-- <a href="https://www.tutorialspoint.com/design_pattern/facade_pattern.htm" target="_blank"> www.tutorialspoint.com facade_pattern </a>
+- <a href="https://www.tutorialspoint.com/design_pattern/facade_pattern.htm" target="_blank"> tutorialspoint -  facade_pattern </a>
 
