@@ -63,6 +63,8 @@
 
 - <strong><a href="structural_design_pattern/bridge/" target="_blank">Bridge</a></strong>
 
+- <strong><a href="structural_design_pattern/decorator/" target="_blank">Decorator</a></strong>
+
 - <strong><a href="structural_design_pattern/facade/" target="_blank">Facade</a></strong>
     
 --- 
