@@ -3,23 +3,25 @@ also Known as `wrapper`
  > - structural pattern.
  > - allows a user to add new functionality to an existing object without altering (Changing) its structure.
 
-<table> 
+<table align="center"> 
     <tr>
-        <td><img src = "assets/Decorator_UML_class_diagram.png" ></td>
+        <td><img style="background-color:#33475b" src = "assets/Decorator_UML_class_diagram.png" ></td>
         <td><img src = "assets/decorator_structure.png" ></td>
     </tr>
 </table>
 
 ## Sections
 - [Definitions](#Definitions)
-- [What problems can it solve?](#What-problems-can-it-solve?)
-- [What solution does it describe?](#What-solution-does-it-describe?)
+- [What problems can it solve](#What-problems-can-it-solve)
+- [What solution does it describe](#What-solution-does-it-describe)
 - [Examples](#Examples)
     - [Shape Decorator Example](#Shape-Decorator-Example)
     - [Windows Decorator Example](#Windows-Decorator-Example)
     - [Email Notifier Example](#Email-Notifier-Example)
+    - [Coffee Decorator Example](#Coffee-Decorator-Example)
 - [TO DO](#TO-DO)
 - [Summery](#Summery)
+- [Sources](#Sources)
 
 
 ## Definitions
@@ -44,23 +46,23 @@ also Known as `wrapper`
         - because an object's behavior can be augmented without defining an entirely new object.
 
 
-## What problems can it solve?
+## What problems can it solve
 1. Responsibilities should be added to (and removed from) an object dynamically at run-time.
 2. A flexible alternative (Changing) to subclassing for extending functionality should be provided.
     - When using subclassing, different subclasses extend a class in different ways.
     - `But an extension is bound (restricted) to the class at compile-time and can't be changed at run-time.`
 
-## What solution does it describe?
+## What solution does it describe
 1. implement the interface of the extended (decorated) object (Component) transparently by forwarding all requests to it
 perform additional functionality before/after forwarding a request.
 2. This allows working with different Decorator objects to extend the functionality of an object dynamically at run-time.
 
 > See also the UML class and sequence diagram below.
-<center><img src = "assets/Decorator_Design_Pattern_UML.jpg"></center>
+<p align="center" ><img  src = "assets/Decorator_Design_Pattern_UML.jpg"></p>
 
 ## Examples 
 
-### Shape Decorator 
+### Shape Decorator Example 
 > in this example we will decorate a shape with some color
 > without alter (Change) shape class.
 
@@ -278,6 +280,9 @@ void main(List<String> args) {
 ### Email Notifier Example
 - Example in dart: <a href="email_notifier_example/" target="_blank"> click here </a>
 
+### Coffee Decorator Example
+- Example in dart: <a href="coffee_decorator_example.dart" target="_blank"> click here </a>
+- Example Source: https://github.com/scottt2/design-patterns-in-dart/tree/master/decorator
 
 ## TO Do
 https://refactoring.guru/design-patterns/decorator
