@@ -8,10 +8,10 @@ also Known as `Surrogate`
  >> - A proxy controls access to the original object,
  >> - allowing you to perform something either before or after the request gets through to the original object.
 
-image form: https://refactoring.guru/design-patterns/proxy#:~:text=Proxy%20is%20a%20structural%20design,through%20to%20the%20original%20object.
+image source: https://refactoring.guru/design-patterns/proxy#:~:text=Proxy%20is%20a%20structural%20design,through%20to%20the%20original%20object.
 
 <p align="center"> 
-    <img style="background-color:#5547" src = "assets/proxy_structure.png" >
+    <img style="background-color:#554777" src = "assets/proxy_structure.png" >
 </p>
 <p align="center"> 
     <img style="background-color:#5547" src = "assets/proxy_structure_java_insider.gif" >
@@ -36,27 +36,27 @@ image form: https://refactoring.guru/design-patterns/proxy#:~:text=Proxy%20is%20
 
 - <details>
   <summary> <h3 style="display: inline;">  Tutorial Point</h3> </summary>
-    - a class represents functionality of another class.
-    </details>
+  - a class represents functionality of another class.
+  </details>
    
 
 
 - <details>
   <summary> <h3 style="display: inline;">  Wikipedia</h3> </summary>
   
-    -  A proxy: in its most general form, is a **class functioning as an interface to something else**.
+    -  A proxy: in its most general form, is a ***class functioning as an interface to something else***.
     - The proxy could interface to anything: 
-      - a `network connection`, a` large object in memory`, a `file`, or` some other resource`
+      - a `network connection`, a `large object in memory`, a `file`, or `some other resource`
       - that is expensive or impossible to duplicate.
     > - In short, a proxy is a wrapper or agent object that is being called by the client
     >-  to access the real serving object behind the scenes. 
     >- Use of the proxy can simply be forwarding to the real object, or can provide additional logic.
     >- In the proxy, extra functionality can be provided,
     >---
-    - > for example ---
-    - >  caching when operations on the real object are resource intensive,
-    - >  or checking preconditions before operations on the real object are invoked.
-    - > For the client, usage of a proxy object is similar to using the real object, because both implement the same interface.
+    > - for example ---
+    > - caching when operations on the real object are resource intensive,
+    > - or checking preconditions before operations on the real object are invoked.
+    > - For the client, usage of a proxy object is similar to using the real object, because both implement the same interface.
     </details>
     
 
@@ -127,6 +127,72 @@ Proxy is applicable whenever there is a need for a more versatile or sophisticat
 - Example in dart: <a href="image_example/" target="_blank"> click here </a>
 - Example Source: GOF && https://www.tutorialspoint.com/design_pattern/proxy_pattern.htm 
 
+#### code
+```dart
+abstract class Graphic {
+  void displayImage();
+}
+
+// On System A
+class RealImage implements Graphic {
+  final String _filename;
+
+  RealImage(this._filename) {
+    _loadImageFromDisk();
+  }
+
+  /// Loads the image from the disk
+  void _loadImageFromDisk() => print("Loading   $_filename");
+
+  /// Displays the image
+  void displayImage() => print("Displaying $_filename");
+}
+
+// On System B
+class ProxyImage implements Graphic {
+  final String _filename;
+  RealImage? _image;
+
+  ProxyImage(this._filename);
+
+  /// Displays the image
+  void displayImage() {
+    if (_image == null) {
+      _image = RealImage(_filename);
+    } else {
+      _image!.displayImage();
+    }
+  }
+}
+
+// Test method
+void main(List<String> arguments) {
+  Graphic image1 = ProxyImage("HiRes_10MB_Photo1");
+  Graphic image2 = ProxyImage("HiRes_10MB_Photo2");
+
+  print("--- image1----");
+  image1.displayImage(); // loading necessary
+  image1.displayImage(); // loading unnecessary
+  print("--- image2----");
+  image2.displayImage(); // loading necessary
+  image2.displayImage(); // loading unnecessary
+  print("--- image1----");
+  print("image1.displayImage() again  = will display without loading ");
+  image1.displayImage(); // loading unnecessary
+}
+
+// Output
+
+// --- image1----
+// Loading   HiRes_10MB_Photo1
+// Displaying HiRes_10MB_Photo1
+// --- image2----
+// Loading   HiRes_10MB_Photo2
+// Displaying HiRes_10MB_Photo2
+// --- image1----
+// image1.displayImage() again  = will display without loading 
+// Displaying HiRes_10MB_Photo1
+```
 
 ### 3rd party youtube example 
 - Example in dart: <a href="3rd_party_youtube_example/" target="_blank"> click here </a>
@@ -140,10 +206,14 @@ Proxy is applicable whenever there is a need for a more versatile or sophisticat
 <table>
   <tr>
     <td><img src="assets/proxy_simplify.jpeg"></td>
-    <td><img style="background-color:#5547"  src="assets/Proxy_example.png"><td>
+    <td><img style="background-color:#554700"  src="assets/Proxy_example.png"><td>
   </tr>
 </table>
 
+## Summery
+- A proxy, in its most general form, is a class functioning as an interface to something else.
+- The proxy could interface to anything: a network connection, a large object in memory, a file, or some other resource that is expensive or impossible to duplicate.
+- In short, a proxy is a wrapper or agent object that is being called by the client to access the real serving object behind the scenes.
 ## Sources
 
 - https://refactoring.guru/design-patterns/proxy#:~:text=Proxy%20is%20a%20structural%20design,through%20to%20the%20original%20object.

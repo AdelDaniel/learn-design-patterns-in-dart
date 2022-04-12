@@ -11,10 +11,10 @@ class RealImage implements Graphic {
   }
 
   /// Loads the image from the disk
-  void _loadImageFromDisk() => print("Loading   " + _filename);
+  void _loadImageFromDisk() => print("Loading   $_filename");
 
   /// Displays the image
-  void displayImage() => print("Displaying " + _filename);
+  void displayImage() => print("Displaying $_filename");
 }
 
 // On System B
