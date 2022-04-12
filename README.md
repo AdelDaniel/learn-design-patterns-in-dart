@@ -67,4 +67,5 @@
 
 - <strong><a href="structural_design_pattern/facade/" target="_blank">Facade</a></strong>
     
+- <strong><a href="structural_design_pattern/proxy/" target="_blank">Proxy</a></strong>
 --- 
