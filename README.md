@@ -21,7 +21,7 @@
      Some patterns can be rendered unnecessary in languages that have built-in support for solving the problem they are trying to solve, and object-oriented patterns are not necessarily suitable for non-object-oriented languages.
 
 ---
-## **Creational Design Pattern**
+## **Creational Design Patterns**
 
 - **Wikipedia**
  
@@ -43,7 +43,7 @@
 - <strong><a href="creational_design_pattern/builder" target="_blank">Builder </a></strong>
 
 ---
-## **Structural Design Pattern**
+## **Structural Design Patterns**
 
 - **Wikipedia**
     - Structural patterns are concerned with how classes and objects are composed to form larger structures.
@@ -68,4 +68,18 @@
 - <strong><a href="structural_design_pattern/facade/" target="_blank">Facade</a></strong>
     
 - <strong><a href="structural_design_pattern/proxy/" target="_blank">Proxy</a></strong>
+--- 
+
+## **Behavioral Design Patterns**
+> refactoring.guru: Behavioral design patterns are concerned with `algorithms` and the `assignment` of responsibilities between objects.
+- **Wikipedia**
+    - behavioral design patterns are design patterns that identify `common communication patterns among objects`. 
+   
+
+- **tutorial point**
+    - These design patterns are specifically concerned `with communication between objects`.
+
+
+- <strong><a href="behavioral_design_patterns/chain_of_responsibility/" target="_blank">Chain Of Responsibility</a></strong>
+
 --- 
