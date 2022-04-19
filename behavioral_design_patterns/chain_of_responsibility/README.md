@@ -35,9 +35,12 @@ image source: https://refactoring.guru/design-patterns/chain-of-responsibility
 - [Definitions](#Definitions)
 - [What problems can it solve](#What-problems-can-it-solve)
 - [What solution does it describe](#What-solution-does-it-describe)
+  - [the UML class and sequence diagram below](#the-UML-class-and-sequence-diagram-below.)
 - [Examples](#Examples)
     - [Logger Example](#Logger-Example)
+    - [Order Example](#Order-Example)
     - [Processor Example](#Processor-Example)
+- [Summery](#Summery)
 - [Sources](#Sources)
 </details>
 
@@ -143,13 +146,12 @@ image source: https://refactoring.guru/design-patterns/chain-of-responsibility
 ### Logger Example 
 Source: https://github.com/scottt2/design-patterns-in-dart/tree/master/chain_of_responsibility
 
-> - A logger is created using a chain of loggers,
-> - each one configured with different log levels.
-
-- In this pattern,
-- normally each receiver contains reference to another receiver.
-- If one object cannot handle the request
-- then it passes the same to the next receiver and so on.
+ - A logger is created using a chain of loggers,
+ - each one configured with different log levels.
+  
+> - normally each receiver contains reference to another receiver.
+> - If one object cannot handle the request
+> - then it passes the same to the next receiver and so on.
 
 - Implementation
   1.  We have created an abstract class AbstractLogger with a level of logging.
@@ -252,11 +254,18 @@ void main() {
 }
 
 ```
+### Order Example
+  Example: <a href="order_example/" target="_blank"> click here </a>
+
 ### Processor Example
   Example: <a href="chain_example/" target="_blank"> click here </a>
 ## Summery
--  Intention: Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request.
-- Chain the receiving objects and pass the request along the chain until an object handles it.
+- normally each receiver contains reference to another receiver.
+- If one object cannot handle the request
+- then it passes the same to the next receiver and so on.
+> - GOF Intention: Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request.
+> - Chain the receiving objects and pass the request along the chain until an object handles it.
+
 
 ## Sources
 - https://github.com/scottt2/design-patterns-in-dart/tree/master/chain_of_responsibility

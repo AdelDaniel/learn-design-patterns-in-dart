@@ -23,6 +23,7 @@ Source: https://media.geeksforgeeks.org/wp-content/uploads/desigmpatternuml1.png
     1. which will primarily receive the request 
     2. and dispatches the request to a chain of handlers.
 - It has reference to the only first handler in the chain and does not know anything about the rest of the handlers.
+
 ### Concrete handlers :
 - These are actual handlers of the request chained in some sequential order.
 
@@ -38,7 +39,6 @@ Source: https://media.geeksforgeeks.org/wp-content/uploads/desigmpatternuml1.png
 
 
 ### Code In Dart
-
 
 ```dart
 class Number {
