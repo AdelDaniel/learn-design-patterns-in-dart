@@ -90,5 +90,8 @@
   - These design patterns are specifically concerned `with communication between objects`.
 
 - <strong><a href="behavioral_design_patterns/chain_of_responsibility/" target="_blank">Chain Of Responsibility</a></strong>
+- <strong><a href="behavioral_design_patterns/observer/" target="_blank">Observer</a></strong>
 
 ---
+
+c
