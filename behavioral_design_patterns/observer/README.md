@@ -108,7 +108,7 @@ You should consider using this pattern in your application when multiple objects
 
 - <a  href="twitter_example/"> twitter_example </a>
 
-- <a  href="twitter_example/"> basic_example </a>
+- <a  href="basic_example/"> basic_example </a>
 
 <h2 id="Summery"> Summery</h2>
 
