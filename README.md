@@ -94,4 +94,6 @@
 
 ---
 
-c
+## **Other Patterns Not Exist In GOF**
+
+- <strong><a href="more_important_patterns/dependency_injection/" target="_blank">Dependency Injection</a></strong>
