@@ -24,7 +24,7 @@
 
 > Patterns that imply mutable state may be unsuited for functional programming languages.
 
-     Some patterns can be rendered unnecessary in languages that have built-in support for solving the problem they are trying to solve, and object-oriented patterns are not necessarily suitable for non-object-oriented languages.
+Some patterns can be rendered unnecessary in languages that have built-in support for solving the problem they are trying to solve, and object-oriented patterns are not necessarily suitable for non-object-oriented languages.
 
 ---
 
@@ -97,3 +97,5 @@
 ## **Other Patterns Not Exist In GOF**
 
 - <strong><a href="more_important_patterns/dependency_injection/" target="_blank">Dependency Injection</a></strong>
+
+- <strong><a href="more_important_patterns/service_locator/" target="_blank">Service Locator</a></strong>
