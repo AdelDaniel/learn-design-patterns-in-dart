@@ -24,7 +24,7 @@
 
 > Patterns that imply mutable state may be unsuited for functional programming languages.
 
-     Some patterns can be rendered unnecessary in languages that have built-in support for solving the problem they are trying to solve, and object-oriented patterns are not necessarily suitable for non-object-oriented languages.
+Some patterns can be rendered unnecessary in languages that have built-in support for solving the problem they are trying to solve, and object-oriented patterns are not necessarily suitable for non-object-oriented languages.
 
 ---
 
