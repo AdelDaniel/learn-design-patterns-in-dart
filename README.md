@@ -91,6 +91,7 @@ Some patterns can be rendered unnecessary in languages that have built-in suppor
 
 - <strong><a href="behavioral_design_patterns/chain_of_responsibility/" target="_blank">Chain Of Responsibility</a></strong>
 - <strong><a href="behavioral_design_patterns/observer/" target="_blank">Observer</a></strong>
+- <strong><a href="behavioral_design_patterns/command/" target="_blank">Command</a></strong>
 
 ---
 
