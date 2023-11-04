@@ -167,7 +167,7 @@ void main() {
 
 ---
 
-- <a  href="command_terminal_example_with_history.dart.dart/"> command_terminal_example_with_history.dart </a>
+- <a  href="command_terminal_example_with_history.dart/"> command_terminal_example_with_history.dart </a>
 
 - <a  href="command_remote_control_example.dart/"> command_remote_control_example </a>
 - <a  href="command_remote_control_easy_example.dart/"> command_remote_control_easy_example </a>
