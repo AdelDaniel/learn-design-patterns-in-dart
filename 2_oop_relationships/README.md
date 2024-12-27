@@ -4,14 +4,20 @@ In UML there are five different types of relationships:
 **Association** , **Aggregation** , **Composition** , **dependency** , and **inheritance**.
 
 ## Sections
-1. [Symbols](#Symbols)
-1. [Association](#Association)
-    - [Types](#Types)
-1. [Aggregation](#Aggregation)
-1. [Composition](#Composition) 
-1. [Comparison](#Comparison) 
-1. [Example](#Example) 
-1. [Extra](#Extra) 
+- [OOP Relationships](#oop-relationships)
+  - [Sections](#sections)
+- [Symbols](#symbols)
+- [Association](#association)
+  - [Types](#types)
+- [Aggregation](#aggregation)
+  - [example:](#example)
+  - [Aggregation:](#aggregation-1)
+- [Composition](#composition)
+  - [example:](#example-1)
+  - [Composition:](#composition-1)
+- [Comparison](#comparison)
+- [Example](#example-2)
+- [Extra](#extra)
 
 
 
@@ -43,29 +49,36 @@ NB: See Fowler's definition - the key is that Bar is semantically related to Foo
 `uni-directional` association:
 - only one of the classes is aware of the relationship.
 
--     class printer{
-            print(String  value)
-        }
-        class Teacher{
-            printExam(Printer printer)=> printer.print("");
-        }
+```dart
+class printer{
+    print(String  value)
+}
+
+class Teacher{
+    printExam(Printer printer)=> printer.print("");
+}
+```
 
 `bi-directional` association:
 - both classes know about each other and with
-- <img src="./assets/association_uml.PNG"/>
-- 
-        class Student{
-            List<Teacher> teachers;
-            assignATempTeacher(Teacher teacher){
-                teacher.assignAHomeWork(homeWork);
-            }
-        }
-        class Teacher{
-            List<Student> students;
-            assignExamToStudent(Student student,Exam exam){
-              student.setExam(exam);  
-            } 
-        }
+
+
+<img src="assets/association_uml.PNG"/>
+
+```dart
+class Student{
+    List<Teacher> teachers;
+    assignATempTeacher(Teacher teacher){
+        teacher.assignAHomeWork(homeWork);
+    }
+}
+class Teacher{
+    List<Student> students;
+    assignExamToStudent(Student student,Exam exam){
+      student.setExam(exam);  
+    } 
+}
+```
 
 
 
@@ -83,13 +96,14 @@ NB: See Fowler's definition - the key is that Bar is semantically related to Foo
 - I have an object which I've borrowed from someone else.
 - When Foo dies, Bar may live on.
 - <img src="./assets/aggregation_uml.PNG"/>
-- 
-        class Foo { 
-            Bar bar; 
-            Foo(Bar bar) { 
+- ```dart
+    class Foo { 
+        Bar bar; 
+        Foo(Bar bar) { 
             this.bar = bar; 
-            }
         }
+    }
+    ```
  
  ---
  # Composition
@@ -106,11 +120,12 @@ NB: See Fowler's definition - the key is that Bar is semantically related to Foo
   - I own an object and I am responsible for its lifetime.
   - When Foo dies, so does Bar.
   - <img src="./assets/composition_uml.PNG"/>
-- 
+- ```dart
         class Foo {
             // Must be final 
             final Bar bar = Bar(); 
         }
+    ```
 
 ---
 # Comparison
@@ -143,6 +158,7 @@ NB: See Fowler's definition - the key is that Bar is semantically related to Foo
 
 - example 2: 
     - Example of Composition
+    ```dart
 
             //Car must have Engine
             class Car {
@@ -155,22 +171,23 @@ NB: See Fowler's definition - the key is that Bar is semantically related to Foo
 
             //Engine Object
             class Engine {}
-
+    ```
 
     - Example of Aggregation
-
-            //Team
-            class Team {      
+  
+    ```dart
+        //Team
+        class Team {      
             //players can be 0 or more
             List players;
 
             Team () {
                 players = ArrayList();
             }
-            }
-            //Player Object
-            class Player {}
-
+        }
+        //Player Object
+        class Player {}
+    ```
 
 # Extra
 
@@ -184,7 +201,7 @@ NB: See Fowler's definition - the key is that Bar is semantically related to Foo
 
 
 
-- <div style="width:664px"> <strong style="display:block;margin:12px 0 4px"><a href="https://slideplayer.com/slide/5119872/" title="CMSC 132: Object-Oriented Programming II" target="_blank">CMSC 132: Object-Oriented Programming II</a></strong><iframe src="https://player.slideplayer.com/16/5119872/" width="664" height="547" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0" allowfullscreen></iframe><div style="padding:5px 0 12px"></div></div>
+<div style="width:664px"> <strong style="display:block;margin:12px 0 4px"><a href="https://slideplayer.com/slide/5119872/" title="CMSC 132: Object-Oriented Programming II" target="_blank">CMSC 132: Object-Oriented Programming II</a></strong><iframe src="https://player.slideplayer.com/16/5119872/" width="664" height="547" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0" allowfullscreen></iframe><div style="padding:5px 0 12px"></div></div>
 
 
-<img src="./assets/association.PNG"/>
+<img src="assets/association.PNG"/>
