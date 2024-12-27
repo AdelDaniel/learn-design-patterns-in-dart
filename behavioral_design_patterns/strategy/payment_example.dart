@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'dart:developer';
 
 /// Payment Example
@@ -13,11 +15,11 @@ class PaymentProcessor {
 
   void processPayment(double amount) {
     if (_paymentType == PaymentType.CREDIT_CARD) {
-      log("Processing credit card payment of amount " + "$amount");
+      log("Processing credit card payment of amount $amount");
     } else if (_paymentType == PaymentType.DEBIT_CARD) {
-      log("Processing debit card payment of amount " + "$amount");
+      log("Processing debit card payment of amount $amount");
     } else if (_paymentType == PaymentType.PAYPAL) {
-      log("Processing PayPal payment of amount " + "$amount");
+      log("Processing PayPal payment of amount $amount");
     } else {
       throw "Invalid payment type";
     }
@@ -40,12 +42,12 @@ enum PaymentType { CREDIT_CARD, DEBIT_CARD, PAYPAL }
 /// The PaymentProcessor class violates the Strategy pattern by using conditional statements to determine the type of payment and then processing it accordingly.
 /// This approach can quickly become unmanageable and inflexible as the number of payment types increases.
 
-/// 
-/// 
+///
+///
 /// FIX
-/// 
+///
 /// To fix this problem, you can use the Strategy Design Pattern
-/// 
+///
 /// Step 1: Identify the algorithm or behavior that needs to be encapsulated and made interchangeable.
 /// Step 2: Define an interface that represents the behavior, with a single method signature that takes in any required parameters.
 /// Step 3: Implement concrete classes that provide specific implementations of the behavior defined in the interface.
@@ -60,18 +62,21 @@ abstract interface class PaymentStrategy {
 /// For example, here are the CreditCardPaymentStrategy, DebitCardPaymentStrategy, and PaypalPaymentStrategy classes:
 
 class CreditCardPaymentStrategy implements PaymentStrategy {
+  @override
   void processPayment(double amount) {
     log("Processing credit card payment of amount: $amount");
   }
 }
 
 class DebitCardPaymentStrategy implements PaymentStrategy {
+  @override
   void processPayment(double amount) {
     log("Processing debit card payment of amount: $amount");
   }
 }
 
 class PaypalPaymentStrategy implements PaymentStrategy {
+  @override
   void processPayment(double amount) {
     log("Processing PayPal payment of amount: $amount");
   }
@@ -82,7 +87,7 @@ class PaypalPaymentStrategy implements PaymentStrategy {
 class PaymentProcessorStrategy {
   PaymentStrategy? _paymentStrategy;
 
-  PaymentProcessor(PaymentStrategy paymentStrategy) {
+  void paymentProcessor(PaymentStrategy paymentStrategy) {
     _paymentStrategy = paymentStrategy;
   }
 

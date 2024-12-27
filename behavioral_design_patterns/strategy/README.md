@@ -346,8 +346,7 @@ void main() {
 
 ### Payment Example
 
-- /payment_example.dart
-- <strong><a href="storage_example.dart" target="_blank">Storage Data Source Example</a></strong>
+- <strong><a href="payment_example.dart" target="_blank">Payment Example</a></strong>
 
 
 ## Summery
