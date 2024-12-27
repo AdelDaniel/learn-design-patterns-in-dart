@@ -1,10 +1,12 @@
+// ignore_for_file: unused_field
+
 class Service {}
 
 class ExampleService implements Service {}
 
 class AnotherExampleService implements Service {}
 
-/// Without dependency injection
+/// **Without dependency injection**
 // the Client class contains a Service member variable initialized in the constructor.
 // The client directly constructs and controls which service it uses,
 // creating a hard-coded dependency.
@@ -12,26 +14,26 @@ class AnotherExampleService implements Service {}
 class ClientWithoutDependencyInjection {
   late Service _service;
 
+  /// The dependency is hard-coded.
   ClientWithoutDependencyInjection() {
-    // The dependency is hard-coded.
-    _service = new ExampleService();
+    _service = ExampleService();
   }
 }
 
-/// Constructor injection
+/// **Constructor injection**
 // most common form of dependency injection
 // a class to request its dependencies through its constructor.
 // This ensures the client is always in a valid state,
 // since it cannot be instantiated without its necessary dependencies.
 
 class ClientWithConstructorInjection {
-  Service _service;
+  final Service _service;
 
   // The dependency is injected through a constructor.
   ClientWithConstructorInjection(this._service);
 }
 
-/// Setter injection
+/// **Setter injection**
 // accepting dependencies through a setter method,
 // rather than a constructor,
 // clients can allow injectors to manipulate their dependencies at any time.
@@ -47,7 +49,7 @@ class ClientWithSetterInjection {
   }
 }
 
-/// Interface injection
+/// **Interface injection**
 // dependencies are completely ignorant of their clients,
 // yet still send and receive references to new clients.
 
@@ -80,16 +82,16 @@ class ClientWithInterfaceInjection implements ServiceSetter {
 }
 
 class ServiceInjector {
-  Set<ServiceSetter> _clients = {};
+  final Set<ServiceSetter> _clients = {};
 
   void inject(ServiceSetter client) {
     _clients.add(client);
-    client.setService(new ExampleService());
+    client.setService(ExampleService());
   }
 
   void switchAnotherExampleService() {
     for (var client in _clients) {
-      client.setService(new AnotherExampleService());
+      client.setService(AnotherExampleService());
     }
   }
 }
