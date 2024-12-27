@@ -4,9 +4,7 @@ abstract interface class VendingMachineState {
   void handle();
 }
 
-///
 /// Concrete States
-///
 class ReadyState implements VendingMachineState {
   const ReadyState();
   @override
@@ -31,10 +29,7 @@ class OutOfStockState implements VendingMachineState {
   void handle() => print("OutOfStockState");
 }
 
-///
 /// Context
-///
-
 class VendingMachineContext {
   VendingMachineState _state;
   VendingMachineContext(this._state);
