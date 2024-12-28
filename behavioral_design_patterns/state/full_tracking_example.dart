@@ -1,23 +1,3 @@
-void main() {
-  print("Client: I'm starting working with a location tracker");
-  final tracker = LocationTracker();
-
-  print("---------------");
-  tracker.startTracking();
-
-  print("---------------");
-  tracker.pauseTracking(duration: Duration(seconds: 2));
-
-  print("---------------");
-  tracker.makeCheckIn();
-
-  print("---------------");
-  tracker.findMyChildren();
-
-  print("---------------");
-  tracker.stopTracking();
-}
-
 /// Context
 class LocationTracker {
   /// Location tracking is enabled by default
@@ -149,6 +129,26 @@ class DisabledTrackingState implements TrackingState {
     _tracker?.updateState(state: EnabledTrackingState(tracker: _tracker));
     _tracker?.findMyChildren();
   }
+}
+
+void main() {
+  print("Client: I'm starting working with a location tracker");
+  final tracker = LocationTracker();
+
+  print("---------------");
+  tracker.startTracking();
+
+  print("---------------");
+  tracker.pauseTracking(duration: Duration(seconds: 2));
+
+  print("---------------");
+  tracker.makeCheckIn();
+
+  print("---------------");
+  tracker.findMyChildren();
+
+  print("---------------");
+  tracker.stopTracking();
 }
 
 //  Output Execution result
