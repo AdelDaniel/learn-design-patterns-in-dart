@@ -176,9 +176,8 @@ There are several workarounds:
 ## Sources
 
 1. <https://www.geeksforgeeks.org/state-design-pattern/>
-2. https://www.tutorialspoint.com/design_pattern/command_pattern.htm
-3. https://refactoring.guru/design-patterns/state
-4. https://betulkaraman.medium.com/creative-state-management-with-state-design-pattern-e5193b25669d
+2. https://refactoring.guru/design-patterns/state
+3. https://betulkaraman.medium.com/creative-state-management-with-state-design-pattern-e5193b25669d
 
 <img src = "assets/document_example.png">
 
