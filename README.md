@@ -94,7 +94,7 @@ Some patterns can be rendered unnecessary in languages that have built-in suppor
 - <strong><a href="behavioral_design_patterns/observer/" target="_blank">Observer</a></strong>
 - <strong><a href="behavioral_design_patterns/command/" target="_blank">Command</a></strong>
 - <strong><a href="behavioral_design_patterns/strategy/" target="_blank">Strategy</a></strong>
-
+- <strong><a href="behavioral_design_patterns/state/" target="_blank">State</a></strong>
 ---
 
 ## **Other Patterns Not Exist In GOF**
