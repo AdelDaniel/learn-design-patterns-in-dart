@@ -1,4 +1,5 @@
-/// An example.
+/// SMS example.
+library;
 
 /// First,
 /// we’ll create a MessagingService interface for sending messages in different ways:
@@ -11,10 +12,12 @@ abstract interface class MessagingService {
 /// we’ll define two implementations of the interface above, that send messages through email and SMS:
 /// the EmailService class.
 class EmailService implements MessagingService {
+  @override
   String getMessageBody() {
     return "email message";
   }
 
+  @override
   String getServiceName() {
     return "EmailService";
   }
@@ -22,10 +25,12 @@ class EmailService implements MessagingService {
 
 /// The SMSService class.
 class SMSService implements MessagingService {
+  @override
   String getMessageBody() {
     return "SMS message";
   }
 
+  @override
   String getServiceName() {
     return "SMSService";
   }
