@@ -1,7 +1,7 @@
 import 'dart:developer';
 
-// The client program only knows about the Car and the functions that the Car provides.
-// The internal implementation details are hidden from the client program.
+/// The client program only knows about the Car and the functions that the Car provides.
+/// The internal implementation details are hidden from the client program.
 
 abstract class ICar {
   void turnOnCar();
@@ -9,9 +9,9 @@ abstract class ICar {
   String getCarType();
 }
 
-// implementation classes of Car.
+/// implementation classes of Car.
 class ManualCar implements ICar {
-  String _carType = "Manual";
+  final String _carType = "Manual";
 
   @override
   String getCarType() => _carType;
@@ -24,7 +24,7 @@ class ManualCar implements ICar {
 }
 
 class AutomaticCar implements ICar {
-  String _carType = "Automatic";
+  final String _carType = "Automatic";
 
   @override
   String getCarType() => _carType;
