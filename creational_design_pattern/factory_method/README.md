@@ -1,4 +1,5 @@
 # Factory Method Pattern
+
 Also known as: `Virtual Constructor`
 
     - is a creational pattern.
@@ -6,25 +7,24 @@ Also known as: `Virtual Constructor`
 
     This is done by creating objects by calling a factory method—either specified in an interface and implemented by child classes, or implemented in a base class and optionally overridden by derived classes—rather than by calling a constructor.
 
-
-
 ## Sections
 
 - [Examples](#Examples)
-    - [shape Example](#shape-Example)
-    - [Dialog Example](#Dialog-Example)
-    - [vessel volume Example](#vessel-volume-Example)
+  - [shape Example](#shape-Example)
+  - [Dialog Example](#Dialog-Example)
+  - [vessel volume Example](#vessel-volume-Example)
 - [Resources](#Resources)
 
 ## Examples
 
 ### shape Example
+
 source: [Tutorial Point java ](https://www.tutorialspoint.com/design_pattern/factory_pattern.htm)
 <img src="assets/factory_pattern_uml_diagram.jpg" >
 
-
 #### Step 1
- Create an interface.
+
+Create an interface.
 
 ```dart
 abstract class IShape {
@@ -32,8 +32,11 @@ abstract class IShape {
   void draw();
 }
 ```
+
 #### Step 2
- Create concrete classes implementing the same interface.
+
+Create concrete classes implementing the same interface.
+
 ```dart
 class Rectangle implements IShape {
   @override
@@ -50,8 +53,11 @@ class Circle implements IShape {
   void draw() => print("Inside Circle::draw() method.");
 }
 ```
+
 #### Step 3
- Create a Factory to generate object of concrete class based on given information.
+
+Create a Factory to generate object of concrete class based on given information.
+
 ```dart
 enum ShapeType { CIRCLE, RECTANGLE, SQUARE }
 
@@ -73,6 +79,7 @@ class ShapeFactory {
 ```
 
 #### Step 4
+
 Use the Factory to get object of concrete class by passing an information such as type.
 
 ```dart
@@ -94,14 +101,17 @@ void main() {
 ```
 
 ---
+
 ### Dialog Example
+
     This example illustrates how the Factory Method can be used for creating cross-platform UI elements without coupling the client code to concrete UI classes.
 
 - <strong><a href="dialog_example" target="_blank"> Dialog Example</a></strong>
 
-
 ---
+
 ### vessel volume Example
+
 source: [Design Pattern in Dart ( factory method ) ](https://github.com/scottt2/design-patterns-in-dart/tree/master/factor_method)
 
 `updated code in coffee_example.dart`
@@ -164,8 +174,8 @@ void main() {
 }
 ```
 
+## Resources
 
-## Resources 
- - [Wikipedia: Factory Method](https://en.wikipedia.org/wiki/Factory_method_pattern)
+- [Wikipedia: Factory Method](https://en.wikipedia.org/wiki/Factory_method_pattern)
 
- - [Design Pattern in Dart ( factory method ) ](https://github.com/scottt2/design-patterns-in-dart/tree/master/factor_method)
+- [Design Pattern in Dart (factory method) ](https://github.com/scottt2/design-patterns-in-dart/tree/master/factor_method)
