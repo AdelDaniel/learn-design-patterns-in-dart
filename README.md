@@ -11,7 +11,6 @@
 > reusable solution to a commonly occurring problem within a given context in software design.
 
 - It is not a finished design that can be transformed directly into source or machine code.
-
   - Rather, it is a _description_ or _template_
   - for how to solve a problem that can be used in many different situations.
 
@@ -31,7 +30,6 @@ Some patterns can be rendered unnecessary in languages that have built-in suppor
 ## **Creational Design Patterns**
 
 - **Wikipedia**
-
   - Are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation.
   - The basic form of object creation could result in design problems or in added complexity to the design.
   - Creational design patterns solve this problem by somehow controlling this object creation.
@@ -40,7 +38,6 @@ Some patterns can be rendered unnecessary in languages that have built-in suppor
   - Another is hiding how instances of these concrete classes are created and combined
 
 - **Tutorial point**
-
   - a way to create objects.
   - while hiding the creation logic, rather than instantiating objects directly using new operator.
   - This gives program more flexibility in deciding which objects need to be created for a given use case.
@@ -53,7 +50,6 @@ Some patterns can be rendered unnecessary in languages that have built-in suppor
 ## **Structural Design Patterns**
 
 - **Wikipedia**
-
   - Structural patterns are concerned with how classes and objects are composed to form larger structures.
   - Structural class patterns use inheritance to compose
   interfaces or implementations. - As a simple example, consider how multiple
@@ -62,7 +58,6 @@ Some patterns can be rendered unnecessary in languages that have built-in suppor
       - Another example is the class form of the Adapter pattern. In general, an adapter makes |one interface (the adaptee's) conform to another, thereby providing a uniform abstraction of different interfaces.A class adapter accomplishes this by 1 inheriting privately from an adaptee class. The adapter then expresses its | interface in terms of the adaptee’s. | -->
 
 - **tutorial point**
-
   - These design patterns concern class and object composition.
   - Concept of inheritance is used to compose interfaces and define ways to compose objects to obtain new functionalities.
 
@@ -83,11 +78,9 @@ Some patterns can be rendered unnecessary in languages that have built-in suppor
 > refactoring.guru: Behavioral design patterns are concerned with `algorithms` and the `assignment` of responsibilities between objects.
 
 - **Wikipedia**
-
   - behavioral design patterns are design patterns that identify `common communication patterns among objects`.
 
 - **tutorial point**
-
   - These design patterns are specifically concerned `with communication between objects`.
 
 - <strong><a href="behavioral_design_patterns/chain_of_responsibility/" target="_blank">Chain Of Responsibility</a></strong>
@@ -96,6 +89,7 @@ Some patterns can be rendered unnecessary in languages that have built-in suppor
 - <strong><a href="behavioral_design_patterns/strategy/" target="_blank">Strategy</a></strong>
 - <strong><a href="behavioral_design_patterns/state/" target="_blank">State</a></strong>
 - <strong><a href="behavioral_design_patterns/iterator/" target="_blank">Iterator</a></strong>
+- <strong><a href="behavioral_design_patterns/visitor/" target="_blank">Visitor</a></strong>
 
 ---
 
@@ -108,4 +102,4 @@ Some patterns can be rendered unnecessary in languages that have built-in suppor
 ## **Interview Questions**
 
 - https://medium.com/@greekykhs/part-3-java-design-pattern-interview-questions-answers-factory-and-abstract-factory-e46b8ebb39e3
-- 
+-
