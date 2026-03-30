@@ -1,3 +1,4 @@
+// behavioral_design_patterns/strategy/payment_example.dart
 // ignore_for_file: constant_identifier_names
 
 import 'dart:developer';
@@ -95,4 +96,5 @@ class PaymentProcessorStrategy {
     _paymentStrategy?.processPayment(amount);
   }
 }
-// This implementation follows the Open-Closed Principle as well as Strategy Pattern because you can add new payment types by creating new implementations of the PaymentStrategy interface without modifying the existing code.
+/// This implementation follows the Open-Closed Principle as well as Strategy Pattern 
+/// because you can add new payment types by creating new implementations of the PaymentStrategy interface without modifying the existing code.

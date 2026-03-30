@@ -1,5 +1,8 @@
 # **_`OOP`_**
 
+- Object Oriented Programming is a programming paradigm.
+- Where the complete software operates as a bunch of objects talking to each other
+
 ## Sections
 
 - [**_`OOP`_**](#oop)
@@ -16,7 +19,7 @@
     - [example: the coffee machine](#example-the-coffee-machine)
     - [Abstraction two types.](#abstraction-two-types)
   - [Encapsulation](#encapsulation)
-    - [Difference between abstraction \&\& encapsulation](#difference-between-abstraction--encapsulation)
+    - [Difference between Abstraction \&\& Encapsulation](#difference-between-abstraction--encapsulation)
   - [Inheritance](#inheritance)
     - [Forms of Inheritance in Object Oriented Programming](#forms-of-inheritance-in-object-oriented-programming)
   - [Polymorphism](#polymorphism)
@@ -30,6 +33,7 @@
     - [Polymorphism](#polymorphism-1)
     - [Abstraction](#abstraction-1)
     - [Encapsulation](#encapsulation-1)
+  - [Questions:](#questions)
 
 ---
 
@@ -75,9 +79,23 @@ Increased code duplication: Low cohesion can lead to the duplication of code, as
 Reduced functionality: Low cohesion can result in modules that lack a clear purpose and contain elements that don’t belong together, reducing their functionality and making them harder to maintain.
 Difficulty in understanding the module: Low cohesion can make it harder for developers to understand the purpose and behavior of a module, leading to errors and a lack of clarity.
 
+---
+
+The main feature of the OOPs (OOP Principles)
+
+> known as `4 pillars`
+> `Basic principles` of OOPs are as follows:
+
+- Data Abstraction
+- Encapsulation
+- Inheritance
+- Polymorphism
+
+---
+
 ## Abstraction
 
-- hiding unnecessary details and data from the user.
+- `Hiding` unnecessary details and data from the user.
 - show what functionality available to use.
 
 ### Definition
@@ -106,13 +124,13 @@ source: https://www.journaldev.com/33191/what-is-abstraction-in-oops
 ## Encapsulation
 
 - Encapsulation == `Single Unit`
-- bundling(wrapping) data and methods that work on that data within a `single unit`
+- Bundling (`wrapping`) data and methods that work on that data within a `single unit`
 
 <a><img src="./assets/encapsulation.jpg"/></a>
 
 ---
 
-### Difference between abstraction && encapsulation
+### Difference between Abstraction && Encapsulation
 
 <a><img src="./assets/the_difference_between_abstraction_and_encapsulation.jpeg"/></a>
 <a><img src="./assets/the_difference_between_abstraction_and_encapsulation2.jpeg"/></a>
@@ -121,22 +139,22 @@ source: https://www.journaldev.com/33191/what-is-abstraction-in-oops
 
 ## Inheritance
 
-- It is a mechanism where you can to derive a class from another class for a hierarchy of classes
+- It is a mechanism where you can to `derive a class from another class` for a hierarchy of classes
 - that share a set of attributes and methods.
 
 ### Forms of Inheritance in Object Oriented Programming
 
 source: https://www.guru99.com/java-class-inheritance.html
 
-| type                        | Definition                                                                                                                                                                                                     |     |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
-| 1. Single inheritance       | This is a form of inheritance in which a class inherits only one parent class                                                                                                                                  |     |
-| 2. Multiple Inheritance     | An inheritance becomes multiple inheritances when a class inherits more than one parent class. ""NOt Exist In dart""                                                                                           |     |
-| 3. Multi-level              | For example, a class_1 is inherited by a class_2 and this class_2 also gets inherited by class_3 and this process goes on. This is known as multi-level inheritance.                                           |     |
-| 4. Hierarchical inheritance | In this, various Child classes inherit a single Parent class. The example given in the introduction of the inheritance is an example of Hierarchical inheritance since classes BMW and Audi inherit class Car. |     |
-| 5. Hybrid Inheritance       | When there is a combination of more than one form of inheritance, it is known as hybrid inheritance.                                                                                                           |     |
+| type                        | Definition                                                                                                                                                                                                     |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Single inheritance       | This is a form of inheritance in which a class inherits only one parent class                                                                                                                                  |
+| 2. Multiple Inheritance     | An inheritance becomes multiple inheritances when a class inherits more than one parent class. ""NOt Exist In dart""                                                                                           |
+| 3. Multi-level              | For example, a class_1 is inherited by a class_2 and this class_2 also gets inherited by class_3 and this process goes on. This is known as multi-level inheritance.                                           |
+| 4. Hierarchical inheritance | In this, various Child classes inherit a single Parent class. The example given in the introduction of the inheritance is an example of Hierarchical inheritance since classes BMW and Audi inherit class Car. |
+| 5. Hybrid Inheritance       | When there is a combination of more than one form of inheritance, it is known as hybrid inheritance.                                                                                                           |
 
-<img src=".\assets\inheritance.jpg"/>
+<img src="./assets/inheritance.jpg"/>
 
 ---
 
@@ -171,12 +189,12 @@ source: https://www.guru99.com/java-class-inheritance.html
 
 ### Object
 
+- An object is an instance of a class.
 - A real-world entity having a particular state and behavior.
-- We can define it as an instance of a class.
 
 ### Class
 
-- A logical entity that defines the blueprint from which an object can be created or instantiated.
+- A logical entity that defines the `blueprint` from which an object can be created or instantiated.
 
 ### Inheritance
 
@@ -196,3 +214,9 @@ source: https://www.guru99.com/java-class-inheritance.html
 ### Encapsulation
 
 - A concept that refers to the wrapping of code and data together into a `single unit`.
+
+## Questions:
+
+- https://www.geeksforgeeks.org/interview-prep/oops-interview-questions/
+- https://www.interviewbit.com/oops-interview-questions/
+

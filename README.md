@@ -91,6 +91,8 @@ Some patterns can be rendered unnecessary in languages that have built-in suppor
 - <strong><a href="behavioral_design_patterns/iterator/" target="_blank">Iterator</a></strong>
 - <strong><a href="behavioral_design_patterns/visitor/" target="_blank">Visitor</a></strong>
 
+- <strong><a href="behavioral_design_patterns/mediator/" target="_blank">Mediator</a></strong>
+
 ---
 
 ## **Other Patterns Not Exist In GOF**

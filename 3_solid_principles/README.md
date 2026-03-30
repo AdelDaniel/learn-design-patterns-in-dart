@@ -1,10 +1,21 @@
 # **_`Solid Principles`_**
 
-1. [1. Single Responsibility Principle (SRP)](<#1.-Single-Responsibility-Principle-(SRP)>)
-1. [2. Open closed principle](#2.-Open-closed-principle)
-1. [3. Liskov Substitution Principle (LSP)](<#3.-Liskov-Substitution-Principle-(LSP)>)
-1. [4. Interface Segregation Principle (ISP)](<#4.-Interface-Segregation-Principle-(ISP)>)
-1. [5. Dependency Inversion Principle (DIP)](<#5.-Dependency-Inversion-Principle-(DIP)>)
+- [**_`Solid Principles`_**](#solid-principles)
+  - [1. Single Responsibility Principle (SRP)](#1-single-responsibility-principle-srp)
+    - [❌ Wrong](#-wrong)
+    - [✅ Right](#-right)
+  - [2. Open closed principle](#2-open-closed-principle)
+    - [❌ Wrong](#-wrong-1)
+    - [✅ Right](#-right-1)
+  - [3. Liskov Substitution Principle (LSP)](#3-liskov-substitution-principle-lsp)
+    - [❌ Wrong](#-wrong-2)
+    - [✅ Right](#-right-2)
+  - [4. Interface Segregation Principle (ISP)](#4-interface-segregation-principle-isp)
+    - [❌ Wrong](#-wrong-3)
+    - [✅ Right](#-right-3)
+  - [5. Dependency Inversion Principle (DIP)](#5-dependency-inversion-principle-dip)
+    - [❌ Wrong](#-wrong-4)
+    - [✅ Right](#-right-4)
 
 ## 1. Single Responsibility Principle (SRP)
 
@@ -131,7 +142,6 @@ class AreaCalculator {
 - Thanks to the **interface**,
 - now we have the possibility to add or remove as many classes as we want
 - without changing AreaCalculator.
-
   - For example, if we added class Square implements Area it would automatically be "compatible" with the double calculate(...) method.
 
   -  The gist of this principle is: depend on abstractions and not on implementations.
@@ -144,7 +154,6 @@ class AreaCalculator {
 ## 3. Liskov Substitution Principle (LSP)
 
 - that **`subclasses should be replaceable with superclasses`**
-
   - without altering the logical correctness of the program.
 
 - In practical terms, it means that a
@@ -256,13 +265,12 @@ class Robot implements Worker {
 `very important`
 
 - DIP states that we should code against abstractions and not implementations.
-
   - ✅ Extending an abstract class is good
   - ✅ and implement an interface is good
 
 - ❌ but descending from a concrete classed with no abstract methods is bad.
 
-<img src=".\assets\dipQuote.png" align="center"/>
+<img src="./assets/dipQuote.png" align="center"/>
 
 <table align="center">
     <tr>

@@ -1,3 +1,4 @@
+// behavioral_design_patterns/strategy/storage_example.dart
 /// Storage Example
 library;
 
@@ -39,6 +40,7 @@ class MemoryStorage<Model> implements DataSource {
     }
   }
 
+  @override
   List<T> loadModels<T extends DomainModel>() {
     if (_items?.isEmpty == true) {
       return [];
@@ -119,6 +121,7 @@ abstract interface class DomainModel {
 }
 
 class User implements DomainModel {
+  @override
   final int id;
   final String username;
   User({required this.id, required this.username});
