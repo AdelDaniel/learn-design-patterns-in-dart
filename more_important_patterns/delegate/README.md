@@ -15,6 +15,7 @@
   - [Components \&\& Diagrams (UML class || Sequence diagrams).](#components--diagrams-uml-class--sequence-diagrams)
   - [What problems can it solve || When to Use || Use Cases](#what-problems-can-it-solve--when-to-use--use-cases)
   - [Examples](#examples)
+    - [Spell Example (Good)](#spell-example-good)
     - [Waiter](#waiter)
   - [Sources](#sources)
 
@@ -44,6 +45,10 @@ Reusability:
 Can be used in various scenarios with different delegate implementations.
 
 ## Examples
+
+### Spell Example (Good)
+
+Dart Code: [link](examples/spell_example.dart)
 
 ### Waiter
 
