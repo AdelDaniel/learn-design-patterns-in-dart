@@ -11,6 +11,8 @@
 // Model
 // ----------------------------------------------------------------------------
 
+// ignore_for_file: unused_field
+
 /// A simple data class representing a Note.
 class Note {
   String name;
