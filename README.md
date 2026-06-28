@@ -101,6 +101,8 @@ Some patterns can be rendered unnecessary in languages that have built-in suppor
 
 - <strong><a href="more_important_patterns/service_locator/" target="_blank">Service Locator</a></strong>
 
+- <strong><a href="more_important_patterns/delegate/" target="_blank">Delegate</a></strong>
+
 ## **Interview Questions**
 
 - https://medium.com/@greekykhs/part-3-java-design-pattern-interview-questions-answers-factory-and-abstract-factory-e46b8ebb39e3
