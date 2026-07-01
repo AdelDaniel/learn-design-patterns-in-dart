@@ -65,6 +65,8 @@ Some patterns can be rendered unnecessary in languages that have built-in suppor
 
 - <strong><a href="structural_design_pattern/bridge/" target="_blank">Bridge</a></strong>
 
+- <strong><a href="structural_design_pattern/composite/" target="_blank">Composite</a></strong>
+
 - <strong><a href="structural_design_pattern/decorator/" target="_blank">Decorator</a></strong>
 
 - <strong><a href="structural_design_pattern/facade/" target="_blank">Facade</a></strong>
